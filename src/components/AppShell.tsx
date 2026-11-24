@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Home, Users, PlusCircle, Activity, User, LogIn, ChevronDown, LogOut, Database, AlertTriangle, ShieldCheck, Stethoscope, ClipboardList, Heart, ZoomIn } from 'lucide-react'
+import { Home, Users, PlusCircle, Activity, User, LogIn, ChevronDown, LogOut, Database, AlertTriangle, ShieldCheck, Stethoscope, ClipboardList, Heart } from 'lucide-react'
 import { useAuth } from '../lib/authContext'
 import { isSupabaseConfigured } from '../lib/supabase'
 import { SupabaseModal } from './SupabaseModal'
@@ -16,7 +16,6 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
   const { user, signOut, openAuthSheet, isDonor, isReceiver, isVerifier } = useAuth()
   const [dbModalOpen, setDbModalOpen] = useState(false)
   const [userDropdown, setUserDropdown] = useState(false)
-  const [zoomLevel, setZoomLevel] = useState<'100' | '110' | '120'>('110')
   const isConfigured = isSupabaseConfigured()
 
   const isAuth = user && !user.isAnonymous
@@ -69,8 +68,8 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
 
   return (
     <div
-      className="min-h-screen bg-surface text-on-surface flex flex-col font-sans selection:bg-primary-container selection:text-white pb-28 transition-all duration-200"
-      style={{ zoom: `${Number(zoomLevel) / 100}` }}
+      className="min-h-screen bg-surface text-on-surface flex flex-col font-sans selection:bg-primary-container selection:text-white pb-28"
+      style={{ zoom: '110%' }}
     >
       {/* ══════════════ EMERGENCY DISCLAIMER BANNER (Permanent & Visible on Every Screen) ══════════════ */}
       <aside
@@ -140,28 +139,6 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
 
           {/* Right Cluster */}
           <div className="flex items-center gap-2.5">
-            {/* Screen Zoom Switcher for Judges & Presentation */}
-            <div className="hidden sm:flex items-center gap-1 bg-surface-container/80 border border-outline/25 px-2.5 py-1.5 rounded-full text-xs">
-              <span className="text-on-surface-variant font-medium flex items-center gap-1 text-[11px]">
-                <ZoomIn className="w-3.5 h-3.5 text-secondary" />
-                <span>Zoom:</span>
-              </span>
-              {(['100', '110', '120'] as const).map((z) => (
-                <button
-                  key={z}
-                  onClick={() => setZoomLevel(z)}
-                  className={`px-2 py-0.5 rounded-lg font-bold text-[11px] transition-all ${
-                    zoomLevel === z
-                      ? 'bg-secondary text-surface shadow-sm'
-                      : 'text-on-surface-variant hover:text-white hover:bg-surface-container-high'
-                  }`}
-                  title={`Set screen scale to ${z}%`}
-                >
-                  {z}%
-                </button>
-              ))}
-            </div>
-
             {/* Supabase status badge */}
             <button
               onClick={() => setDbModalOpen(true)}
