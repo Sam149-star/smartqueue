@@ -1,0 +1,16 @@
+{
+  "short_name": "Raktify",
+  "name": "Raktify — Urgent Blood Donor Matching",
+  "icons": [
+    {
+      "src": "/logo-icon.png",
+      "type": "image/png",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#111318",
+  "theme_color": "#111318",
+  "display": "standalone",
+  "description": "Find a donor. Fast. With consent. Location- and blood-group-based matching platform connecting verified urgent blood requests with consenting voluntary donors."
+}

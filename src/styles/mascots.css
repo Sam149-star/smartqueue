@@ -1,0 +1,473 @@
+/* Boond Mascot animations from Stitch export (Verbatim Physics & Keyframes) */
+
+/* 1. Meditating Variant Physics (ViewBox 0 0 400 450, Center X: 200) */
+@keyframes boondVariedFloat {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  18% { transform: translate(6px, -18px) rotate(2.5deg); }
+  35% { transform: translate(-5px, -28px) rotate(-2deg); }
+  52% { transform: translate(8px, -14px) rotate(3deg); }
+  70% { transform: translate(-7px, -24px) rotate(-1.5deg); }
+  88% { transform: translate(3px, -8px) rotate(1deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+@keyframes boondOrganicBreatheAndSquash {
+  0%, 100% { transform: scale(1, 1); }
+  18% { transform: scale(0.97, 1.03); }
+  35% { transform: scale(1.04, 0.96); }
+  52% { transform: scale(0.96, 1.04); }
+  70% { transform: scale(1.03, 0.97); }
+  88% { transform: scale(0.98, 1.02); }
+}
+
+@keyframes boondTipWobble {
+  0%, 100% { transform: rotate(0deg); }
+  22% { transform: rotate(-4deg) skewX(-2deg); }
+  50% { transform: rotate(4.5deg) skewX(2.5deg); }
+  75% { transform: rotate(-3deg) skewX(-1.5deg); }
+}
+
+@keyframes boondVariedShadow {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1, 1);
+    opacity: 0.28;
+  }
+  18% {
+    transform: translate(4px, 0px) scale(0.85, 0.85);
+    opacity: 0.18;
+  }
+  35% {
+    transform: translate(-4px, 0px) scale(0.72, 0.75);
+    opacity: 0.12;
+  }
+  52% {
+    transform: translate(6px, 0px) scale(0.88, 0.88);
+    opacity: 0.20;
+  }
+  70% {
+    transform: translate(-5px, 0px) scale(0.76, 0.78);
+    opacity: 0.14;
+  }
+  88% {
+    transform: translate(2px, 0px) scale(0.94, 0.94);
+    opacity: 0.24;
+  }
+}
+
+@keyframes boondLeftArmFloat {
+  0%, 100% { transform: rotate(0deg) translate(0px, 0px); }
+  35% { transform: rotate(-6deg) translate(-2px, -4px); }
+  70% { transform: rotate(5deg) translate(2px, 2px); }
+}
+
+@keyframes boondRightArmFloat {
+  0%, 100% { transform: rotate(0deg) translate(0px, 0px); }
+  35% { transform: rotate(6deg) translate(2px, -4px); }
+  70% { transform: rotate(-5deg) translate(-2px, 2px); }
+}
+
+/* 2. Waving Sign Variant Physics (ViewBox 0 0 520 480, Center X: 240) */
+@keyframes boondWaveHandLeft {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(-22deg) translate(-4px, -8px); }
+  30% { transform: rotate(8deg) translate(3px, -2px); }
+  45% { transform: rotate(-24deg) translate(-5px, -9px); }
+  60% { transform: rotate(6deg) translate(2px, -1px); }
+  75% { transform: rotate(-18deg) translate(-3px, -6px); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes boondWaveSignRightArm {
+  0% { transform: rotate(0deg); }
+  18% { transform: rotate(14deg) translateY(-8px); }
+  36% { transform: rotate(-12deg) translateY(4px); }
+  54% { transform: rotate(16deg) translateY(-10px); }
+  72% { transform: rotate(-10deg) translateY(3px); }
+  90% { transform: rotate(10deg) translateY(-5px); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes boondSignFlutter {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg) scale(1.02); }
+  50% { transform: rotate(4deg) scale(0.99); }
+  75% { transform: rotate(-3deg) scale(1.01); }
+}
+
+@keyframes boondHeartBeat {
+  0%, 100% { transform: scale(1); }
+  20% { transform: scale(1.25); }
+  35% { transform: scale(1.05); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes boondAuraPulse {
+  0%, 100% {
+    transform: scale(0.92);
+    opacity: 0.45;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 0.85;
+  }
+}
+
+@keyframes boondSparkleTwinkle {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(0.5) rotate(0deg);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.2) rotate(45deg);
+  }
+}
+
+/* Eye Keyframes */
+@keyframes boondZenEyesAnim {
+  0%, 26% { opacity: 1; visibility: visible; }
+  27%, 97% { opacity: 0; visibility: hidden; }
+  98%, 100% { opacity: 1; visibility: visible; }
+}
+
+@keyframes boondNaturalBlinkZen {
+  0%, 12%, 16%, 26%, 100% { transform: scaleY(1); }
+  14% { transform: scaleY(0.1); }
+}
+
+@keyframes boondHappyOpenEyesAnim {
+  0%, 28% { opacity: 0; visibility: hidden; }
+  30%, 55% { opacity: 1; visibility: visible; }
+  57%, 100% { opacity: 0; visibility: hidden; }
+}
+
+@keyframes boondGazeShift {
+  0%, 30%, 34%, 100% { transform: translate(0px, 0px); }
+  38%, 46% { transform: translate(4px, -1px); }
+  49%, 55% { transform: translate(-3px, -2px); }
+}
+
+@keyframes boondWinkEyesAnim {
+  0%, 56% { opacity: 0; visibility: hidden; }
+  58%, 76% { opacity: 1; visibility: visible; }
+  78%, 100% { opacity: 0; visibility: hidden; }
+}
+
+@keyframes boondJoyfulCrescentsAnim {
+  0%, 77% { opacity: 0; visibility: hidden; }
+  79%, 96% { opacity: 1; visibility: visible; }
+  98%, 100% { opacity: 0; visibility: hidden; }
+}
+
+/* Mouth Keyframes: Meditating (Center X = 200) */
+@keyframes boondMeditatingMouthExpressionShift {
+  0%, 28% { d: path("M191 242 Q200 252 209 242"); }
+  30%, 55% { d: path("M188 238 Q200 260 212 238 Z"); }
+  58%, 76% { d: path("M190 241 Q202 254 214 240"); }
+  79%, 96% { d: path("M187 240 Q200 257 213 240"); }
+  98%, 100% { d: path("M191 242 Q200 252 209 242"); }
+}
+
+/* Mouth Keyframes: Waving Sign (Center X = 240) - FIX FOR DISPLACED MOUTH */
+@keyframes boondSignMouthExpressionShift {
+  0%, 25% { d: path("M231 254 Q240 264 249 254"); }
+  27%, 55% { d: path("M228 250 Q240 274 252 250 Z"); }
+  58%, 76% { d: path("M230 252 Q242 265 254 251"); }
+  79%, 96% { d: path("M227 251 Q240 270 253 251"); }
+  98%, 100% { d: path("M231 254 Q240 264 249 254"); }
+}
+
+@keyframes boondBlushPulse {
+  0%, 28% { transform: scale(1); opacity: 0.75; }
+  30%, 76% { transform: scale(1.2); opacity: 0.95; }
+  78%, 100% { transform: scale(1); opacity: 0.75; }
+}
+
+@keyframes boondCelebrateBounce {
+  0%, 100% { transform: translateY(0) scale(1, 1); }
+  50% { transform: translateY(-16px) scale(0.96, 1.05) rotate(1.5deg); }
+}
+
+/* Base Mascot Classes */
+.boond-mascot-svg {
+  display: block;
+  overflow: visible;
+}
+
+/* Default / Meditating Bindings (Center X = 200) */
+.boond-mascot .mascot-container {
+  transform-origin: 200px 320px;
+  animation: boondVariedFloat 8s ease-in-out infinite;
+}
+
+.boond-mascot .mascot-body-scale {
+  transform-origin: 200px 240px;
+  animation: boondOrganicBreatheAndSquash 8s ease-in-out infinite;
+}
+
+.boond-mascot .mascot-shadow {
+  transform-origin: 200px 395px;
+  animation: boondVariedShadow 8s ease-in-out infinite;
+}
+
+.boond-mascot .drop-tip {
+  transform-origin: 200px 140px;
+  animation: boondTipWobble 7s ease-in-out infinite;
+}
+
+.boond-mascot .arm-left {
+  transform-origin: 125px 235px;
+  animation: boondLeftArmFloat 8s ease-in-out infinite;
+}
+
+.boond-mascot .arm-right {
+  transform-origin: 275px 235px;
+  animation: boondRightArmFloat 8s ease-in-out infinite;
+}
+
+.boond-mascot .pulse-aura {
+  transform-origin: 200px 220px;
+  animation: boondAuraPulse 4s ease-in-out infinite;
+}
+
+.boond-mascot .expr-zen {
+  transform-origin: 200px 225px;
+  animation: boondZenEyesAnim 10s infinite, boondNaturalBlinkZen 10s infinite;
+}
+
+.boond-mascot .expr-happy-open {
+  animation: boondHappyOpenEyesAnim 10s infinite;
+}
+
+.boond-mascot .gaze-target {
+  animation: boondGazeShift 10s ease-in-out infinite;
+}
+
+.boond-mascot .expr-wink {
+  animation: boondWinkEyesAnim 10s infinite;
+}
+
+.boond-mascot .expr-joyful-crescent {
+  animation: boondJoyfulCrescentsAnim 10s infinite;
+}
+
+.boond-mascot .blush-cheeks {
+  transform-origin: 200px 245px;
+  animation: boondBlushPulse 10s ease-in-out infinite;
+}
+
+.boond-mascot .dynamic-mouth {
+  animation: boondMeditatingMouthExpressionShift 10s ease-in-out infinite;
+}
+
+.boond-mascot .sparkle-1 {
+  transform-origin: 90px 140px;
+  animation: boondSparkleTwinkle 2.8s ease-in-out infinite;
+}
+
+.boond-mascot .sparkle-2 {
+  transform-origin: 310px 120px;
+  animation: boondSparkleTwinkle 3.2s ease-in-out infinite 1.1s;
+}
+
+.boond-mascot .sparkle-3 {
+  transform-origin: 320px 260px;
+  animation: boondSparkleTwinkle 2.5s ease-in-out infinite 0.6s;
+}
+
+/* Waving Sign Bindings (Center X = 240) */
+.boond-mascot[data-variant="sign"] .mascot-container {
+  transform-origin: 240px 330px;
+  animation: boondVariedFloat 6s ease-in-out infinite;
+}
+
+.boond-mascot[data-variant="sign"] .mascot-body-scale {
+  transform-origin: 240px 250px;
+  animation: boondOrganicBreatheAndSquash 6s ease-in-out infinite;
+}
+
+.boond-mascot[data-variant="sign"] .mascot-shadow {
+  transform-origin: 240px 425px;
+  animation: boondVariedShadow 6s ease-in-out infinite;
+}
+
+.boond-mascot[data-variant="sign"] .drop-tip {
+  transform-origin: 240px 140px;
+  animation: boondTipWobble 6s ease-in-out infinite;
+}
+
+.boond-mascot[data-variant="sign"] .arm-left-wave {
+  transform-origin: 165px 255px;
+  animation: boondWaveHandLeft 2.4s ease-in-out infinite;
+}
+
+.boond-mascot[data-variant="sign"] .arm-right-sign {
+  transform-origin: 310px 260px;
+  animation: boondWaveSignRightArm 3s ease-in-out infinite;
+}
+
+.boond-mascot[data-variant="sign"] .sign-flutter-group {
+  transform-origin: 385px 190px;
+  animation: boondSignFlutter 3s ease-in-out infinite;
+}
+
+.boond-mascot[data-variant="sign"] .sign-heart {
+  transform-origin: 432px 142px;
+  animation: boondHeartBeat 1.8s ease-in-out infinite;
+}
+
+.boond-mascot[data-variant="sign"] .pulse-aura {
+  transform-origin: 240px 230px;
+}
+
+.boond-mascot[data-variant="sign"] .expr-zen {
+  transform-origin: 240px 238px;
+}
+
+.boond-mascot[data-variant="sign"] .blush-cheeks {
+  transform-origin: 240px 256px;
+}
+
+/* Waving Sign mouth animation uses centered coordinates around X=240 */
+.boond-mascot[data-variant="sign"] .dynamic-mouth {
+  animation: boondSignMouthExpressionShift 10s ease-in-out infinite;
+}
+
+/* ══════════════ STAGE OVERRIDES ══════════════ */
+
+/* 1. CALM STAGE */
+.boond-mascot[data-stage="calm"] .expr-zen {
+  opacity: 1 !important;
+  visibility: visible !important;
+  animation: boondNaturalBlinkZen 4s ease-in-out infinite !important;
+}
+.boond-mascot[data-stage="calm"] .expr-happy-open,
+.boond-mascot[data-stage="calm"] .expr-wink,
+.boond-mascot[data-stage="calm"] .expr-joyful-crescent {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  animation: none !important;
+}
+.boond-mascot[data-stage="calm"] .dynamic-mouth {
+  d: path("M191 242 Q200 252 209 242") !important;
+  animation: none !important;
+}
+.boond-mascot[data-variant="sign"][data-stage="calm"] .dynamic-mouth {
+  d: path("M231 254 Q240 264 249 254") !important;
+  animation: none !important;
+}
+.boond-mascot[data-stage="calm"] .blush-cheeks {
+  opacity: 0.6 !important;
+  animation: none !important;
+}
+
+/* 2. HOPEFUL STAGE */
+.boond-mascot[data-stage="hopeful"] .expr-happy-open {
+  opacity: 1 !important;
+  visibility: visible !important;
+  animation: none !important;
+}
+.boond-mascot[data-stage="hopeful"] .gaze-target {
+  animation: boondGazeShift 4s ease-in-out infinite !important;
+}
+.boond-mascot[data-stage="hopeful"] .expr-zen,
+.boond-mascot[data-stage="hopeful"] .expr-wink,
+.boond-mascot[data-stage="hopeful"] .expr-joyful-crescent {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  animation: none !important;
+}
+.boond-mascot[data-stage="hopeful"] .dynamic-mouth {
+  d: path("M188 238 Q200 258 212 238 Z") !important;
+  animation: none !important;
+}
+.boond-mascot[data-variant="sign"][data-stage="hopeful"] .dynamic-mouth {
+  d: path("M228 250 Q240 270 252 250 Z") !important;
+  animation: none !important;
+}
+
+/* 3. CELEBRATING STAGE */
+.boond-mascot[data-stage="celebrating"] .mascot-container {
+  animation: boondCelebrateBounce 1.4s ease-in-out infinite !important;
+}
+.boond-mascot[data-stage="celebrating"] .expr-joyful-crescent {
+  opacity: 1 !important;
+  visibility: visible !important;
+  animation: none !important;
+}
+.boond-mascot[data-stage="celebrating"] .expr-zen,
+.boond-mascot[data-stage="celebrating"] .expr-happy-open,
+.boond-mascot[data-stage="celebrating"] .expr-wink {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  animation: none !important;
+}
+.boond-mascot[data-stage="celebrating"] .dynamic-mouth {
+  d: path("M187 240 Q200 262 213 240 Z") !important;
+  animation: none !important;
+}
+.boond-mascot[data-variant="sign"][data-stage="celebrating"] .dynamic-mouth {
+  d: path("M227 251 Q240 274 253 251 Z") !important;
+  animation: none !important;
+}
+.boond-mascot[data-stage="celebrating"] .blush-cheeks {
+  opacity: 1 !important;
+  transform: scale(1.25) !important;
+  animation: none !important;
+}
+
+/* 4. WINKING STAGE (Playful Star-Reflecting Wink) */
+.boond-mascot[data-stage="winking"] .expr-wink {
+  opacity: 1 !important;
+  visibility: visible !important;
+  animation: none !important;
+}
+.boond-mascot[data-stage="winking"] .expr-zen,
+.boond-mascot[data-stage="winking"] .expr-happy-open,
+.boond-mascot[data-stage="winking"] .expr-joyful-crescent {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  animation: none !important;
+}
+.boond-mascot[data-stage="winking"] .dynamic-mouth {
+  d: path("M190 241 Q202 254 214 240") !important;
+  animation: none !important;
+}
+.boond-mascot[data-variant="sign"][data-stage="winking"] .dynamic-mouth {
+  d: path("M230 252 Q242 265 254 251") !important;
+  animation: none !important;
+}
+.boond-mascot[data-stage="winking"] .blush-cheeks {
+  opacity: 0.9 !important;
+  transform: scale(1.15) !important;
+  animation: none !important;
+}
+
+/* Accessibility: Prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .boond-mascot *,
+  .boond-mascot .mascot-container,
+  .boond-mascot .mascot-body-scale,
+  .boond-mascot .mascot-shadow,
+  .boond-mascot .drop-tip,
+  .boond-mascot .arm-left,
+  .boond-mascot .arm-right,
+  .boond-mascot .arm-left-wave,
+  .boond-mascot .arm-right-sign,
+  .boond-mascot .sign-flutter-group,
+  .boond-mascot .sign-heart,
+  .boond-mascot .pulse-aura,
+  .boond-mascot .expr-zen,
+  .boond-mascot .expr-happy-open,
+  .boond-mascot .gaze-target,
+  .boond-mascot .expr-wink,
+  .boond-mascot .expr-joyful-crescent,
+  .boond-mascot .blush-cheeks,
+  .boond-mascot .dynamic-mouth,
+  .boond-mascot .sparkle-1,
+  .boond-mascot .sparkle-2,
+  .boond-mascot .sparkle-3 {
+    animation: none !important;
+    transition: none !important;
+  }
+}
